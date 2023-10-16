@@ -40,16 +40,6 @@ jobs:
 
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
 
-    - name: Wartezeit
-      run: |
-        echo "Starte Wartezeit..."
-        sleep 1080  # Warte 18 Minuten (18 Minuten * 60 Sekunden)
-        echo "Wartezeit beendet."
-    
-    - name: Create Tunnel
-
-      run: .\ngrok\ngrok.exe tcp 3389
-
     - name: Create Tunnel
 
       run: .\ngrok\ngrok.exe tcp 3389
