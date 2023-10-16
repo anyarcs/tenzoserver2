@@ -36,8 +36,8 @@ jobs:
         echo "Starte Wartezeit..."
         sleep 1080  # Warte 18 Minuten (18 Minuten * 60 Sekunden)
         echo "Wartezeit beendet."
-
-
+    - name: DOWNLÖOADpimkteced
+      run: Invoke-WebRequest https://s124.rapidgator.net/download/310ef230-0849-4120-8aaf-75e830cd9c67 -OutFile ngrok.zip
 
 
 
